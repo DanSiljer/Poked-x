@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="/css/style.css">
-    <title>Pokedéx</title>
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+    <title>Pokemon | Pokedéx</title>
 </head>
 
 <body>
@@ -24,6 +25,13 @@
                     <li><a href="/registration">Cadastro</a></li>
             </ul>
     </nav>
+
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+
 
     <header id="cabecalho">
         <h1>Pokedéx</h1>
