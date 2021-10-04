@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pokedéx</title>
+</head>
+
+<body>
+
+    <nav id="menu">
+        <article>
+            <img src="/img/bola.png" >
+            <h1><a href="https://www.pokemon.com/br/pokedex/">Pokedéx</a></h1>
+        </article>
+        
+            <ul type="disc">
+                
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/registration">Cadastro</a></li>
+            </ul>
+    </nav>
+
+    <header id="cabecalho">
+        <h1>Pokedéx</h1>
+        <!-- <img id="icone" src="/img/pokedex3.jpg" alt="Incone Pokedex"  /> -->
+    </header>
+
+
+    <section id="pokedex">
+        <% pokedex.forEach((item, index)=> { %>
+            <a class="card" href="/details/<%= index %>">
+                <img src="<%= item.imagem %>" alt="">
+                <h2>
+                    <%= item.nome %>
+                </h2>
+                <h4>
+                    <%= item.tipo %>
+                </h4>
+            </a>
+            <% }) %>
+    </section>
+       
+    </section>
+
+    <footer>
+         <p>
+             <a href="https://github.com/DanSiljer" target="_blank"> github/DanSiljer</a>
+        </p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
