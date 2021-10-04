@@ -14,8 +14,7 @@ app.use(express.urlencoded());
 
 
 app.get("/", (req, res) => {
-
-
+  
   setTimeout(() => {
     message = "";
   }, 1000);
@@ -27,19 +26,14 @@ app.get("/", (req, res) => {
 });
 
 
-app.get("/detalhes/:poke", (req, res) => {
 
-  let detalhe = req.params.poke;
-  let pokedetalhe = pokedex.find(x => x.numero == detalhe)
-  res.render("detalhes", {
-    pokedex: pokedex,
-    pokedetalhe
-  , });
-});
-
-// app.get("/detalhes/", (req, res) => {
-//   res.render("detalhes" , {pokedex: pokedex});
-// });
+  app.get("/detalhes/:id", (req, res) => {
+    const id = req.params.id;
+    const pokemon = pokedex[id];
+    res.render("detalhes", {
+      pokemon,
+    });
+  });
 
 app.get("/cadastro", (req, res) => {
   res.render("cadastro");
