@@ -37,7 +37,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   z-index: 10;
   top: 0;
@@ -104,10 +104,9 @@ nav article img {
 
   header {
     justify-content: space-between ;
-    background-color: #e7e703;
-   
+    background-color: #f3f310;
     width: 100%;
- background-size: cover; /*Faz a imgem de fundo preencher todo o espaço em que ela está */
+    background-size: cover; /*Faz a imgem de fundo preencher todo o espaço em que ela está */
     background-position: center; /* Centraliza a imagem de fundo */
   }
   
@@ -136,12 +135,12 @@ header#cabecalho{
     font-family: Pokemon;
     text-shadow: 0 0 1rem #00000060;
     text-align: center;
-    font-size: 60pt;
-    justify-content: space-around;
+    font-size: 65pt;
+    justify-content: center;
     color: #faea08;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: rgb(4, 29, 248);
-    margin-top: -9%;
+    margin-top: -75px;
   }
   header#cabecalho h2 {
     font-family: 'Courier New', Courier, monospace;
@@ -155,14 +154,14 @@ header#cabecalho{
     width: 15rem;
     padding: 3rem;
     box-shadow: 0 0 rem #00000060;
-    margin: 2rem;
+    margin: 3rem;
     border-radius: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     cursor: pointer;
     transition: transform 0.5s;
-    background-color: rgb(245, 242, 71);
+    background-color: rgb(245, 245, 133);
     color: rgb(23, 138, 245);
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
@@ -368,7 +367,7 @@ header#cabecalho{
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    background-color: #dfdfd7;
+    background-color: white;
     justify-content: space-between ;
     
   }

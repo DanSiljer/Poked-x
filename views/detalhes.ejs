@@ -28,38 +28,35 @@
 
     <header>
         <h1>
-            <span style="font-weight: 200"> Nº  </span>
+            <span style="font-weight: 200"></span>
         </h1>
     </header>
 
-    <section id="/detalhes">
-     
-        <% pokedex.forEach(i => {%>
+    <section id="/detalhes/">
+            <a class="card" href="/detalhes/<%= index %>">
+                <img src="pokedetalhe.imagem" alt="">
 
-        <img src="i.imagem" alt="">
-        <div id="infos">
-            <p>i.nome </p>
-            <div id="info-datail">
+                    <div id="infos">
+                    <p>pokedetalhe.nome</p>
+                <div id="info-datail">
 
                 <div class='col'>
                     <h4>Altura:</h4>
-                    <h3>i.altura</h3>
+                    <h3>pokedetalhe.altura</h3>
                     <h4>Peso:</h4>
-                    <h3>i.peso </h3>
+                    <h3>pokedetalhe.peso </h3>
                 </div>
 
                 <div class='col'>
                     <h4>Categoria:</h4>
-                    <h3> i.categoria</h3>
+                    <h3>pokedetalhe.categoria</h3>
                     <h4>Habilidade:</h4>
-                    <h3> i.habilidade</h3>   
+                    <h3>pokedetalhe.habilidade</h3>   
                 </div>
                 <div>
                     <h3>Tipo:</h3>
-                    <h2>i.tipo</h2>
+                    <h2>pokedetalhe.tipo</h2>
                  </div>
-
-        <% }) %>
     </section>
 
     <footer>

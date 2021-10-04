@@ -16,13 +16,13 @@
     <nav id="menu">
         <article>
             <img src="/img/bola.png" >
-            <h1><a href="https://www.pokemon.com/br/pokedex/">Pokedéx</a></h1>
+            <h1><a href="https://www.pokemon.com/br/pokedex/" target="_blank">Pokedéx</a></h1>
         </article>
         
             <ul type="disc">
                 
                     <li><a href="/">Home</a></li>
-                    <li><a href="/registration">Cadastro</a></li>
+                    <li><a href="/cadastro">Cadastro</a></li>
             </ul>
     </nav>
 
@@ -41,7 +41,7 @@
 
     <section id="pokedex">
         <% pokedex.forEach((item, index)=> { %>
-            <a class="card" href="/details/<%= index %>">
+            <a class="card" href="/d/<%= index %>">
                 <img src="<%= item.imagem %>" alt="">
                 <h2>
                     <%= item.nome %>
