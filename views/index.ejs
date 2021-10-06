@@ -41,7 +41,7 @@
 
     <section id="pokedex">
         <% pokedex.forEach((item, index)=> { %>
-            <a class="card" href="/d/<%= index %>">
+            <a class="card" href="/detalhes/<%= index %>">
                 <img src="<%= item.imagem %>" alt="">
                 <h2>
                     <%= item.nome %>
@@ -52,12 +52,10 @@
             </a>
             <% }) %>
     </section>
-       
-    </section>
 
     <footer>
          <p>
-             <a href="https://github.com/DanSiljer/Pokedex" target="_blank"> github/DanSiljer</a>
+             <a href="https://github.com/DanSiljer" target="_blank"> github/DanSiljer</a>
         </p>
     </footer>
 

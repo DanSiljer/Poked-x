@@ -6,62 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
-    <title>Pokemon | Pokedéx</title>
+    <title>Informações | Pokedéx</title>
 </head>
 
 <nav id="menu">
     <article>
-        <!-- <img src="#" > -->
-        <h1><a href="/"></a></h1>
-    </article><header id="cabecalho"></header>
+        <img src="/img/bola.png" >
+         <h1><a href="https://www.pokemon.com/br/pokedex/" target="_blank">Pokedéx</a></h1>
+    </article>
     
     <ul type="disc">
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/registration">Cadastro</a></li>
+            <li><a href="/cadastro">Cadastro</a></li>
         </ul>
 </nav>
 
+<header id="cabecalho">
     <h1>Pokedéx</h1>
-    <img id="icone" src="#" />
+    <!-- <img id="icone" src="#" /> -->
 </header>
 
-    <header>
+<header id="registrar">
         <h1>
-            <span style="font-weight: 200">Nº pokemon.numero</span>
+            <span style="font-weight: 200">Nº <%= pokemon.numero %> </span>
         </h1>
     </header>
 
     <section id="detalhes">
-            <a class="card" href="/detalhes/<%= index %>">
-                <img src="pokemon.imagem" alt="">
+            <a class="details" href="#">
+                 <img src="<%= pokemon.imagem %>" alt="">
 
                     <div id="infos">
-                    <p>pokemon.nome</p>
+                    <p><%= pokemon.nome %></p>
                 <div id="info-datail">
 
                 <div class='col'>
                     <h4>Altura:</h4>
-                    <h3>pokemon.altura</h3>
+                    <h3><%= pokemon.altura %></h3>
                     <h4>Peso:</h4>
-                    <h3>pokemon.peso </h3>
+                    <h3><%= pokemon.peso %> </h3>
                 </div>
 
                 <div class='col'>
                     <h4>Categoria:</h4>
-                    <h3>pokemon.categoria</h3>
+                    <h3><%= pokemon.categoria %></h3>
                     <h4>Habilidade:</h4>
-                    <h3>pokemon.habilidade</h3>   
+                    <h3><%= pokemon.habilidade %></h3>   
                 </div>
                 <div>
                     <h3>Tipo:</h3>
-                    <h2>pokemon.tipo</h2>
+                    <h2><%= pokemon.tipo %></h2>
                  </div>
     </section>
 
     <footer>
         <p>
-            <a href="https://github.com/DanSiljer/Pokedex" target="_blank"> github/DanSiljer</a>
+            <a href="https://github.com/DanSiljer" target="_blank"> github/DanSiljer</a>
        </p>
    </footer>
 

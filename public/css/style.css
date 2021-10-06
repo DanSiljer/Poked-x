@@ -151,12 +151,12 @@ header#cabecalho{
 }
   
   a.card {
+    display: flex;
     width: 15rem;
     padding: 3rem;
     box-shadow: 0 0 rem #00000060;
     margin: 3rem;
     border-radius: 1rem;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     cursor: pointer;
@@ -194,14 +194,15 @@ header#cabecalho{
   }
   
   section#cadastrar {
-    padding: 3rem;
     display: flex;
+    padding: 3rem;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #fff;
     margin: 0 20rem 10rem 20rem;
     box-shadow: 0 0 1rem #00000060;
     border-radius: 1rem;
+    margin: 3rem;
   }
   
   section#cadastrar h2 {
@@ -225,10 +226,11 @@ header#cabecalho{
   
   section#cadastrar form {
     width: 100%;
-    padding: 3rem;
+    padding: 1rem;
   }
   
   section#cadastrar form div input {
+    display: flex;
     width: 100%;
     padding: 1rem;
     font-size: 1.3rem;
@@ -280,6 +282,7 @@ header#cabecalho{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   span#close {
@@ -294,44 +297,53 @@ header#cabecalho{
     transform: scale(1.2);
   }
   
-  section#details {
+  section#detalhes{
     margin: 0 20rem 0 20rem;
-    display: flex;
+    width: 15rem;
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 3rem;
     box-shadow: 0 0 1rem #00000060;
   }
+ 
   
-  section#details div#infos p {
+  section#detalhes div#infos p {
     font-size: 2rem;
     padding-bottom: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke-width: 2px; 
+    color: rgb(58, 116, 250);
+  
   }
   
-  section#details div#infos div#info-datail {
-    background-color: #ccc;
-    display: flex;
+  section#detalhes div#infos div#info-datail {
+    background-color: rgb(250, 234, 5);
     justify-content: space-around;
     align-items: center;
-    padding: 2rem;
-    width: 60%;
+    padding: 1rem;
+    width: 90%;
     border-radius: 1rem;
   }
   
-  section#details div#infos div#info-datail h3 {
-    font-size: 2rem;
-    font-weight: 300;
+  section#detalhes div#infos div#info-datail h3 {
+    font-size: 1rem;
+    /* font-weight: 100; */
     padding: 0.5rem 0 1rem 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
   }
-  
-  section#details div#infos h3 {
+  section#detalhes div#infos h3 {
     padding-top: 3rem;
-    font-size: 2rem;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(110, 109, 109);
   }
-  
-  section#details div#infos h2 {
+
+  section#detalhes div#infos h2 {
+    display: flex;
     background-color: rgb(248, 245, 245);
     padding: 1rem;
     color: rgb(58, 116, 250);
@@ -339,7 +351,12 @@ header#cabecalho{
     width: 50%;
     text-align: center;
     margin-top: 1rem;
-    
+    margin-left: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  #detalhes h4{
+    color: rgb(58, 116, 250);
   }
 
   footer {

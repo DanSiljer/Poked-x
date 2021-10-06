@@ -44,6 +44,7 @@ app.post("/new", (req, res) => {
   pokedex.push(pokemon);
   message = `O Pokemon  foi cadastrado!`;
   res.redirect("/");
+  
  
 });
 
