@@ -298,6 +298,7 @@ header#cabecalho{
   }
   
   section#detalhes{
+    display: flex;
     margin: 0 20rem 0 20rem;
     width: 15rem;
     justify-content: center;
@@ -343,7 +344,7 @@ header#cabecalho{
   }
 
   section#detalhes div#infos h2 {
-    display: flex;
+ 
     background-color: rgb(248, 245, 245);
     padding: 1rem;
     color: rgb(58, 116, 250);
