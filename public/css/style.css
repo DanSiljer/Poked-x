@@ -299,7 +299,7 @@ header#cabecalho{
   
   section#detalhes{
     display: flex;
-    margin: 0 20rem 0 20rem;
+    margin: auto;
     width: 15rem;
     justify-content: center;
     align-items: center;
