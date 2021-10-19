@@ -1,0 +1,388 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+@font-face {font-family: 'Pokemon'; 
+  src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot"); 
+  src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg"); }
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  p {
+    text-align: justify;
+    text-indent: 50px;
+}
+a{
+/*Trocar cor dos links */
+    color: #606060;
+    text-decoration: none;
+}
+/*Undeline nos links quando passa o mouse */
+/* a:hover{
+    text-decoration:underline ;
+}
+   */
+body {
+  background-image: url("/img/container_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+nav {
+  background-color: rgb(7, 7, 7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+nav img {
+  width: 6rem;
+  padding-left: 0.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+  background-color: #111;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #0c45ff;
+}
+
+/* .active {
+  background-color: #1676f5;
+} */
+
+
+nav article {
+  display: flex;
+  align-items: center;
+  
+}
+
+nav article h1 a {
+    color: rgb(253, 251, 251);
+    text-decoration: none;
+}
+nav article img {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+  header {
+    justify-content: space-between ;
+    background-color: #f3f310;
+    width: 100%;
+    background-size: cover; /*Faz a imgem de fundo preencher todo o espaço em que ela está */
+    background-position: center; /* Centraliza a imagem de fundo */
+  }
+  
+  header#cabecalho img#icone {
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    height: 20%;
+    width: 10%;
+    margin-left: 90%;
+    margin-top: -5%;
+    
+}
+header#cabecalho{
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+    justify-content: space-between ;
+    background: url("/img/wallpaperboll2.jpg") no-repeat;
+    background-position: center; 
+    background-size: cover;
+    width: 100%;
+    height: 50px;
+}
+  
+  header#cabecalho h1 {
+    font-family: Pokemon;
+    text-shadow: 0 0 1rem #00000060;
+    text-align: center;
+    font-size: 65pt;
+    justify-content: center;
+    color: #faea08;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: rgb(4, 29, 248);
+    margin-top: -75px;
+  }
+  header#cabecalho h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #888888;
+    font-size: 13pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+  
+  a.card {
+    display: flex;
+    width: 15rem;
+    padding: 3rem;
+    box-shadow: 0 0 rem #00000060;
+    margin: 3rem;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    background-color: rgb(245, 245, 133);
+    color: rgb(23, 138, 245);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  a.card:hover {
+    transform: scale(1.1);
+  }
+  
+  a.card img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  a.card h2 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: #000;
+  }
+  
+  section#pokedex {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  section#cadastrar {
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin: 0 20rem 10rem 20rem;
+    box-shadow: 0 0 1rem #00000060;
+    border-radius: 1rem;
+    margin: 3rem;
+  }
+  
+  section#cadastrar h2 {
+    color: rgb(246, 246, 245);
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  header#registrar h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #0e0d0d;
+    font-size: 20pt;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+   
+  }
+  
+  section#cadastrar form {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  section#cadastrar form div input {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 0.1rem solid #ccc;
+  }
+  
+  section#cadastrar form div label {
+    font-size: 1.3rem;
+    color: rgb(255, 0, 0);
+  }
+  
+  section#cadastrar form button {
+    border: 1px solid rgb(255, 68, 68);
+    background-color: #fff;
+    color: rgb(255, 68, 68);
+    padding: 1rem;
+    font-size: 0.8vw;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    width: 40%;
+  }
+  
+  section#cadastrar form button:hover {
+    background-color: rgb(255, 68, 68);
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  section#message {
+    padding: 1rem;
+    background-color: rgb(9, 220, 248);
+    color: #f8f9fa;
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left: 2rem;
+  }
+  
+  span#close:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.2);
+  }
+  
+  section#detalhes{
+    display: flex;
+    margin: auto;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 0 1rem #00000060;
+  }
+ 
+  
+  section#detalhes div#infos p {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke-width: 2px; 
+    color: rgb(58, 116, 250);
+  
+  }
+  
+  section#detalhes div#infos div#info-datail {
+    background-color: rgb(250, 234, 5);
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    width: 90%;
+    border-radius: 1rem;
+  }
+  
+  section#detalhes div#infos div#info-datail h3 {
+    font-size: 1rem;
+    /* font-weight: 100; */
+    padding: 0.5rem 0 1rem 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+  }
+  section#detalhes div#infos h3 {
+    padding-top: 3rem;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(110, 109, 109);
+  }
+
+  section#detalhes div#infos h2 {
+ 
+    background-color: rgb(248, 245, 245);
+    padding: 1rem;
+    color: rgb(58, 116, 250);
+    border-radius: 1rem;
+    width: 50%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  #detalhes h4{
+    color: rgb(58, 116, 250);
+  }
+
+  footer {
+    display: flex;
+    background-image: url("/img/Pokémonvideo2.jpg");
+    background-repeat: no-repeat;
+    padding: 3rem;
+    justify-content: center;
+    margin-top: 30rem;
+    background-size: cover; /*Faz a imgem de fundo preencher todo o espaço em que ela está */
+    background-position: center; /* Centraliza a imagem de fundo */
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  footer p a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #0e0d0d;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: white;
+    justify-content: space-between ;
+    
+  }
